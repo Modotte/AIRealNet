@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIRealNet Analyzer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="background-glow"></div>
+    <div class="grid-overlay"></div>
+    
+    <div class="container">
+        <header>
+            <div class="logo-wrapper">
+                <div class="logo-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <h1 class="logo">AIRealNet</h1>
+            </div>
+            <p class="subtitle">Next-Generation Image Authenticity Analysis</p>
+        </header>
+
+        <main>
+            <div class="card input-card">
+                <div class="input-wrapper">
+                    <div class="icon-input">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 13C10.4295 13.5741 10.9774 14.0491 11.6066 14.3929C12.2357 14.7367 12.9315 14.9414 13.6467 14.9931C14.3619 15.0448 15.0802 14.9423 15.7526 14.6925C16.4251 14.4427 17.0363 14.0515 17.5442 13.5456L20.5442 10.5456C21.5654 9.48972 22.1287 8.07513 22.1132 6.60635C22.0977 5.13757 21.5046 3.73489 20.4615 2.69931C19.4184 1.66373 18.0097 1.08083 16.5409 1.08796C15.0721 1.09509 13.6693 1.69176 12.6352 2.74959L11.1352 4.24959" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M14 11C13.5705 10.4259 13.0226 9.95088 12.3934 9.60706C11.7643 9.26324 11.0685 9.05859 10.3533 9.0069C9.63809 8.95521 8.91983 9.05772 8.24737 9.30751C7.57491 9.5573 6.96374 9.94855 6.45584 10.4544L3.45584 13.4544C2.43464 14.5103 1.87131 15.9249 1.88684 17.3936C1.90237 18.8624 2.49547 20.2651 3.53854 21.3007C4.58161 22.3363 5.99033 22.9192 7.45911 22.912C8.92789 22.9049 10.3307 22.3082 11.3648 21.2504L12.8648 19.7504" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <input type="text" id="urlInput" placeholder="Paste image URL here..." autocomplete="off">
+                </div>
+                <button id="analyzeBtn">
+                    <span class="btn-text">Analyze Image</span>
+                    <div class="loader"></div>
+                </button>
+                <p class="error-message" id="errorMessage"></p>
+            </div>
+
+            <div class="results-section hidden" id="resultsSection">
+                <div class="card results-card">
+                    <div class="image-col">
+                        <div class="image-frame">
+                            <img id="previewImage" src="" alt="Analyzed Image">
+                            <div class="scan-line"></div>
+                        </div>
+                    </div>
+                    <div class="data-col">
+                        <h3>Analysis Results</h3>
+                        <div class="scores-container" id="scoresContainer">
+                            <!-- Scores will be injected here -->
+                        </div>
+                        <div class="verdict" id="verdict">
+                            <!-- Verdict will be injected here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
