@@ -3,12 +3,12 @@
 <div align="center">
 
 ![AIRealNet Banner](https://img.shields.io/badge/AIRealNet-v1.0-blueviolet?style=for-the-badge)
-[![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Model-yellow?style=for-the-badge)](https://huggingface.co/XenArcAI/AIRealNet)
+[![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Model-yellow?style=for-the-badge)](https://huggingface.co/Modotte/AIRealNet)
 [![License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](LICENSE)
 
 **Next-Generation Image Authenticity Analysis**
 
-[View on Hugging Face](https://huggingface.co/XenArcAI/AIRealNet) • [Official GitHub](https://github.com/XenArcAI/AIRealNet)
+[View on Hugging Face](https://huggingface.co/Modotte/AIRealNet) • [Official GitHub](https://github.com/Modotte/AIRealNet)
 
 </div>
 
@@ -40,7 +40,7 @@ The application consists of:
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/XenArcAI/AIRealNet.git
+   git clone https://github.com/Modotte/AIRealNet.git
    cd AIRealNet
    ```
 
@@ -74,9 +74,9 @@ Access the application at `http://localhost:3000`.
 
 ## 🤖 Model Information
 
-The core of this application is the **AIRealNet** model, developed by **XenArcAI**.
+The core of this application is the **AIRealNet** model, developed by **Modotte**.
 
-- **Hugging Face Hub**: [XenArcAI/AIRealNet](https://huggingface.co/XenArcAI/AIRealNet)
+- **Hugging Face Hub**: [Modotte/AIRealNet](https://huggingface.co/Modotte/AIRealNet)
 
 ## 🤝 Contributing
 
@@ -89,5 +89,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 <div align="center">
-Developed with ❤️ by XenArcAI
+Developed with ❤️ by Modotte
 </div>
